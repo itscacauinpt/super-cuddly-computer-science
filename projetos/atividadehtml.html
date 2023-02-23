@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade Prática</title>
+</head>
+<body>
+  <div>
+    <form>
+      <fieldset>
+        <label>
+          Nome:
+          <input id="name" type="text" />
+        </label>
+        <label>
+          Email:
+          <input id="email" type="email" />
+        </label>
+        <label>
+          Password:
+          <input id="pass" type="password" />
+        </label>
+        <input id="pressBtn" type="button" value="imprimir" />
+    </fieldset>
+    </form>
+  </div>
+  <div id="inputBox">
+    <h2 id="inputH2">Inputs</h2>
+  </div>
+</body>
+</html>
+<script>
+  const pressBtn = document.getElementById('pressBtn');
+
+  const inputEmail = document.getElementById('email');
+  const inputName = document.getElementById('name');
+
+  const inputH2 = document.getElementById('inputH2');
+  const inputBox = document.getElementById('inputBox');
+
+  pressBtn.addEventListener('click', printInputs, false);
+
+  function printInputs() {
+    let paragraphEmail = document.createElement('p')
+    let paragraphName = document.createElement('p')
+
+    inputBox.appendChild(paragraphName)
+    inputBox.appendChild(paragraphEmail)
+
+    paragraphName.innerHTML = `Nome: ${inputName.value}`
+    paragraphEmail.innerHTML = `Email: ${inputEmail.value}`
+  };
+</script>

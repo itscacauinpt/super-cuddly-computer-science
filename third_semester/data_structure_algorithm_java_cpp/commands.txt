@@ -1,0 +1,5 @@
+javac capituloI.java && java capituloI
+
+java.util.Stack
+import java.util.ArrayList;
+import java.util.Collections;  // Import the Collections class
