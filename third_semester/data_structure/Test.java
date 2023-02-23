@@ -1,5 +1,3 @@
-package third_semester.data_structure;
-
 public class Test {
   public static void main (String entrada[]) {
     // int myNum = 5;
