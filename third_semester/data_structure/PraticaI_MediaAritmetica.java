@@ -1,4 +1,3 @@
-// package third_semester.data_structure;
 import javax.swing.JOptionPane;
 
 public class PraticaI_MediaAritmetica {

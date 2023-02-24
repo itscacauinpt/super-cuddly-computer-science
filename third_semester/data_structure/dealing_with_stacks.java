@@ -1,7 +1,3 @@
-// situação-problema: desenvolvendo um algoritmo que recebe do user cinco int números
-// numa pilha com capacidade para cinco numeros e imprime esses numeros
-package stack;
-
 public class dealing_with_stacks {
   int topo, tamanho;
   int[] vetor;
