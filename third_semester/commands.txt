@@ -1,4 +1,0 @@
-javac "archive" --> to run .java
-java "archive" --> to run .class
-
-java third_semester.data_structure.Test
